@@ -1,0 +1,44 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.projects__title {
+    margin-left: 28%;
+}
+
+.projects__text {
+    width: 67%;
+    margin-left: 28%;
+    margin-bottom: 0;
+}
+
+.projects__wrapper {
+    position: relative;
+    display: flex;
+    margin-top: 39px;
+}
+
+.projects__block-text {
+    position: absolute;
+    top: 49px;
+    right: -142px;
+    width: 550px;
+    padding-top: 63px;
+    padding-bottom: 43px;
+    padding-left: 63px;
+    padding-right: 81px;
+    background-color: $white;
+}
+
+.projects__block-text h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.projects__slogan {
+    margin-left: 28%;
+    padding-right: 5%;
+}

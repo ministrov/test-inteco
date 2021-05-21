@@ -1,0 +1,24 @@
+.about {
+    position: relative;
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__text-col {
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    max-width: 550px;
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    background-color: $white;
+    transform: translate(-100%, 50%);
+}
+
+.about__img-col {
+    margin-left: 140px;
+}
