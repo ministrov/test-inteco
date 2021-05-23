@@ -1,5 +1,15 @@
+.page-main {
+    @media (max-width: $mobile-width) {
+        max-width: 300px;
+    }
+}
+
 .page-main__projects {
     margin-top: 104px;
+
+    @media (max-width: $mobile-width) {
+        margin-top: 410px;
+    }
 }
 
 .page-main__inteco-now {

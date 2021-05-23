@@ -14,22 +14,55 @@
     width: 958px;
     height: 2px;
     background-color: $decor-grey;
+
+    @media (max-width: $mobile-width) {
+        width: 254px;
+    }
 }
 
 .projects__title {
     margin-left: 24%;
+
+    @media (max-width: $mobile-width) {
+        margin-left: 10%;
+    }
 }
 
 .projects__text {
     width: 59%;
     margin-left: 24%;
     margin-bottom: 0;
+
+    @media (max-width: $mobile-width) {
+        width: 83%;
+        margin-left: 10%;
+    }
+}
+
+.projects__text {
+    @media (max-width: $mobile-width) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .projects__wrapper {
     position: relative;
     display: flex;
     margin-top: 39px;
+
+    @media (max-width: $mobile-width) {
+        width: 280px;
+        height: 168px;
+        background-image: url("../img/pro.jpg");
+        background-repeat: no-repeat;
+    }
+}
+
+.projects__img {
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .projects__block-text {
@@ -42,6 +75,15 @@
     padding-left: 51px;
     padding-right: 60px;
     background-color: $white;
+
+    @media (max-width: $mobile-width) {
+        right: -20px;
+        width: 100%;
+        padding-top: 28px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 33px;
+    }
 }
 
 .projects__block-text::before {
@@ -54,11 +96,28 @@
     background-image: url("../img/arrows.png");
     background-repeat: no-repeat;
     cursor: pointer;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .projects__block-text h3 {
     font-size: 18px;
     line-height: 26px;
+
+    @media (max-width: $mobile-width) {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+.projects__block-text p {
+    @media (max-width: $mobile-width) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .projects__slogan {
@@ -66,4 +125,12 @@
     margin-left: 24%;
     margin-top: 57px;
     padding-right: 5%;
+
+    @media (max-width: $mobile-width) {
+        width: 69%;
+        margin-top: 190px;
+        margin-left: 10%;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

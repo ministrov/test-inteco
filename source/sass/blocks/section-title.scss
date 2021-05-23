@@ -5,4 +5,9 @@
     font-weight: 700;
     line-height: 38px;
     color: $dark-blue;
+
+    @media (max-width: $mobile-width) {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }

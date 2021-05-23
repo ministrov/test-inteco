@@ -41,6 +41,10 @@ main {
   font-weight: 700;
   line-height: 38px;
   color: #4764b0; }
+  @media (max-width: 330px) {
+    .section-title {
+      font-size: 24px;
+      line-height: 28px; } }
 
 .main-header {
   display: flex;
@@ -49,6 +53,14 @@ main {
   margin: 0;
   padding: 0;
   min-height: 120px; }
+  @media (max-width: 330px) {
+    .main-header {
+      max-width: 260px; } }
+
+@media (max-width: 330px) {
+  .main-header__logo-img {
+    width: 106px;
+    height: 30px; } }
 
 .main-header__link {
   position: relative; }
@@ -62,10 +74,17 @@ main {
   height: 20px;
   background-image: url("../img/link.png");
   background-repeat: no-repeat; }
+  @media (max-width: 330px) {
+    .main-header__link::before {
+      display: none; } }
 
 .container {
   padding-left: 60px;
   padding-right: 60px; }
+  @media (max-width: 330px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
 
 .about {
   position: relative; }
@@ -78,9 +97,22 @@ main {
   width: 2px;
   height: 1695px;
   background-color: #dfdfdf; }
+  @media (max-width: 330px) {
+    .about::before {
+      display: none; } }
 
 .about__wrapper {
   display: flex; }
+  @media (max-width: 330px) {
+    .about__wrapper {
+      display: block;
+      max-width: 300px; } }
+
+@media (max-width: 330px) {
+  .about__text {
+    width: 240px;
+    font-size: 12px;
+    line-height: 18px; } }
 
 .about__text-col {
   position: absolute;
@@ -93,9 +125,27 @@ main {
   padding-bottom: 7px;
   background-color: #ffffff;
   transform: translate(-100%, 50%); }
+  @media (max-width: 330px) {
+    .about__text-col {
+      top: -35%;
+      left: 93%;
+      max-width: 280px;
+      padding-top: 38px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 19px; } }
 
 .about__img-col {
   margin-left: auto; }
+  @media (max-width: 330px) {
+    .about__img-col {
+      width: 280px;
+      height: 174px; } }
+
+@media (max-width: 330px) {
+  .about__img {
+    width: 280px;
+    height: 174px; } }
 
 .projects {
   position: relative;
@@ -112,19 +162,44 @@ main {
   width: 958px;
   height: 2px;
   background-color: #dfdfdf; }
+  @media (max-width: 330px) {
+    .projects::before {
+      width: 254px; } }
 
 .projects__title {
   margin-left: 24%; }
+  @media (max-width: 330px) {
+    .projects__title {
+      margin-left: 10%; } }
 
 .projects__text {
   width: 59%;
   margin-left: 24%;
   margin-bottom: 0; }
+  @media (max-width: 330px) {
+    .projects__text {
+      width: 83%;
+      margin-left: 10%; } }
+
+@media (max-width: 330px) {
+  .projects__text {
+    font-size: 12px;
+    line-height: 18px; } }
 
 .projects__wrapper {
   position: relative;
   display: flex;
   margin-top: 39px; }
+  @media (max-width: 330px) {
+    .projects__wrapper {
+      width: 280px;
+      height: 168px;
+      background-image: url("../img/pro.jpg");
+      background-repeat: no-repeat; } }
+
+@media (max-width: 330px) {
+  .projects__img {
+    display: none; } }
 
 .projects__block-text {
   position: absolute;
@@ -136,6 +211,14 @@ main {
   padding-left: 51px;
   padding-right: 60px;
   background-color: #ffffff; }
+  @media (max-width: 330px) {
+    .projects__block-text {
+      right: -20px;
+      width: 100%;
+      padding-top: 28px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      padding-right: 33px; } }
 
 .projects__block-text::before {
   position: absolute;
@@ -147,19 +230,46 @@ main {
   background-image: url("../img/arrows.png");
   background-repeat: no-repeat;
   cursor: pointer; }
+  @media (max-width: 330px) {
+    .projects__block-text::before {
+      display: none; } }
 
 .projects__block-text h3 {
   font-size: 18px;
   line-height: 26px; }
+  @media (max-width: 330px) {
+    .projects__block-text h3 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; } }
+
+@media (max-width: 330px) {
+  .projects__block-text p {
+    font-size: 12px;
+    line-height: 18px; } }
 
 .projects__slogan {
   width: 61%;
   margin-left: 24%;
   margin-top: 57px;
   padding-right: 5%; }
+  @media (max-width: 330px) {
+    .projects__slogan {
+      width: 69%;
+      margin-top: 190px;
+      margin-left: 10%;
+      font-size: 12px;
+      line-height: 18px; } }
+
+@media (max-width: 330px) {
+  .page-main {
+    max-width: 300px; } }
 
 .page-main__projects {
   margin-top: 104px; }
+  @media (max-width: 330px) {
+    .page-main__projects {
+      margin-top: 410px; } }
 
 .page-main__inteco-now {
   margin-top: 80px; }
@@ -186,20 +296,33 @@ main {
 .inteco-now__wrapper {
   display: flex;
   padding-left: 60px; }
+  @media (max-width: 330px) {
+    .inteco-now__wrapper {
+      padding-left: 30px; } }
 
 .inteco-now__text {
   width: 38%;
   margin-right: 83px; }
+  @media (max-width: 330px) {
+    .inteco-now__text {
+      width: 120px;
+      margin-right: 20px; } }
 
 .inteco-now__desc {
   display: flex;
   width: 50%; }
+  @media (max-width: 330px) {
+    .inteco-now__desc {
+      display: block; } }
 
 .inteco-now__desc dd {
   margin-left: 0; }
 
 .inteco-now__desc-block1 {
   margin-right: 72px; }
+  @media (max-width: 330px) {
+    .inteco-now__desc-block1 {
+      margin-right: 0; } }
 
 .inteco-now__desc-block1 span {
   display: block;
@@ -223,6 +346,9 @@ main {
   position: relative;
   display: flex;
   margin-top: 57px; }
+  @media (max-width: 330px) {
+    .inteco-now__box {
+      flex-direction: column; } }
 
 .inteco-now__box::before {
   position: absolute;
@@ -257,6 +383,13 @@ main {
   padding-right: 40px;
   list-style: none;
   background-color: #ffffff; }
+  @media (max-width: 330px) {
+    .inteco-now__list {
+      width: 100%;
+      padding-top: 29px;
+      padding-bottom: 32px;
+      padding-left: 20px;
+      padding-right: 20px; } }
 
 .inteco-now__item {
   position: relative;
@@ -277,6 +410,12 @@ main {
 .inteco-now__img {
   max-width: 70%;
   margin-left: 30%; }
+  @media (max-width: 330px) {
+    .inteco-now__img {
+      width: 100%;
+      height: 174px;
+      margin-top: 552px;
+      margin-left: 0; } }
 
 .basic-cause__text-block {
   position: relative;
