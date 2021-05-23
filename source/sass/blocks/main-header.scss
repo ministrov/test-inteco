@@ -1,0 +1,23 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-height: 120px;
+}
+
+.main-header__link {
+    position: relative;
+}
+
+.main-header__link::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/link.png");
+    background-repeat: no-repeat;
+}

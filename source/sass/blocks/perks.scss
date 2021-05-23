@@ -1,0 +1,88 @@
+.perks {
+    position: relative;
+    min-height: 1030px;
+}
+
+.perks::before {
+    position: absolute;
+    content: "";
+    top: -36px;
+    left: 0;
+    width: 236px;
+    height: 2px;
+    background-color: $decor-grey;
+}
+
+.perks::after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    left: 234px;
+    z-index: 1;
+    width: 2px;
+    height: 1065px;
+    background-color: $decor-grey;
+}
+
+.perks__title {
+    text-align: center;
+}
+
+.perks__wrapper {
+    position: relative;
+    display: flex;
+    margin-top: 72px;
+}
+
+.perks__img-col {
+    z-index: 2;
+}
+
+.perks__list-col {
+    position: absolute;
+    top: -41px;
+    right: -33px;
+    z-index: 3;
+    width: 470px;
+    padding-top: 50px;
+    padding-bottom: 53px;
+    padding-left: 75px;
+    padding-right: 54px;
+    background-color: $white;
+}
+
+.perks__list {
+    min-width: 360px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.perks__item {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.perks__item:last-child {
+    margin-bottom: 15px;
+}
+
+.perks__item::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: -27px;
+    width: 17px;
+    height: 2px;
+    background-color: $dark-blue;
+}
+
+.perks__link {
+    position: absolute;
+    bottom: -160px;
+    left: 60px;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/arrows.png");
+    background-repeat: no-repeat;
+}

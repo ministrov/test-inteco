@@ -1,0 +1,34 @@
+.about {
+    position: relative;
+}
+
+.about::before {
+    position: absolute;
+    content: "";
+    top: -123px;
+    left: 254px;
+    width: 2px;
+    height: 1695px;
+    background-color: $decor-grey;
+}
+
+.about__wrapper {
+    display: flex;
+}
+
+.about__text-col {
+    position: absolute;
+    top: -23%;
+    left: 45%;
+    max-width: 550px;
+    padding-top: 55px;
+    padding-left: 60px;
+    padding-right: 30px;
+    padding-bottom: 7px;
+    background-color: $white;
+    transform: translate(-100%, 50%);
+}
+
+.about__img-col {
+    margin-left: auto;
+}

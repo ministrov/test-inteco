@@ -1,0 +1,16 @@
+.basic-cause__text-block {
+    position: relative;
+    margin-top: 50px;
+    background-color: $white;
+}
+
+.basic-cause__link::before {
+   position: absolute;
+   content: "";
+   top:66px;
+   right: 47px;
+   width: 30px;
+   height: 30px;
+   background-image: url("../img/arrows.png");
+   background-repeat: no-repeat;
+}
