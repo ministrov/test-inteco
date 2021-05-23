@@ -1,10 +1,24 @@
+.inteco-now {
+    position: relative;
+}
+
+.inteco-now::before {
+    position: absolute;
+    content: "";
+    bottom: -55px;
+    right: 0;
+    width: 917px;
+    height: 2px;
+    background-color: $decor-grey;
+}
+
 .inteco-now__wrapper {
     display: flex;
     padding-left: 60px;
 }
 
 .inteco-now__text {
-    width: 50%;
+    width: 38%;
     margin-right: 83px;
 }
 
@@ -15,6 +29,10 @@
 
 .inteco-now__desc dd {
     margin-left: 0;
+}
+
+.inteco-now__desc-block1 {
+    margin-right: 72px;
 }
 
 .inteco-now__desc-block1 span {
@@ -45,17 +63,39 @@
     margin-top: 57px;
 }
 
+.inteco-now__box::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 2px;
+    background-color: $decor-grey;
+}
+
+.inteco-now__box::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 297px;
+    z-index: 1;
+    width: 2px;
+    height: 625px;
+    background-color: $decor-grey;
+}
+
 .inteco-now__list {
     position: absolute;
-    top: 13%;
+    top: 7%;
     left: 1px;
-    max-width: 470px;
+    z-index: 2;
+    width: 37%;
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 68px;
     padding-bottom: 28px;
-    padding-left: 95px;
-    padding-right: 44px;
+    padding-left: 60px;
+    padding-right: 40px;
     list-style: none;
     background-color: $white;
 }

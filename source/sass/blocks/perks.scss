@@ -8,13 +8,20 @@
     content: "";
     top: -36px;
     left: 0;
-    width: 300px;
+    width: 236px;
     height: 2px;
     background-color: $decor-grey;
 }
 
 .perks::after {
     position: absolute;
+    content: "";
+    top: -35px;
+    left: 234px;
+    z-index: 1;
+    width: 2px;
+    height: 1065px;
+    background-color: $decor-grey;
 }
 
 .perks__title {
@@ -27,15 +34,20 @@
     margin-top: 72px;
 }
 
+.perks__img-col {
+    z-index: 2;
+}
+
 .perks__list-col {
     position: absolute;
     top: -41px;
     right: -33px;
+    z-index: 3;
     width: 470px;
     padding-top: 50px;
     padding-bottom: 53px;
-    padding-left: 50px;
-    padding-right: 59px;
+    padding-left: 75px;
+    padding-right: 54px;
     background-color: $white;
 }
 
@@ -68,5 +80,9 @@
 .perks__link {
     position: absolute;
     bottom: -160px;
-    left: 0;
+    left: 60px;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/arrows.png");
+    background-repeat: no-repeat;
 }

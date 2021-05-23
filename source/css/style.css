@@ -2,8 +2,8 @@ body {
   min-width: 1250px;
   margin: 0;
   padding: 0;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -70,13 +70,22 @@ main {
 .about {
   position: relative; }
 
+.about::before {
+  position: absolute;
+  content: "";
+  top: -123px;
+  left: 254px;
+  width: 2px;
+  height: 1695px;
+  background-color: #dfdfdf; }
+
 .about__wrapper {
   display: flex; }
 
 .about__text-col {
   position: absolute;
   top: -23%;
-  left: 50%;
+  left: 45%;
   max-width: 550px;
   padding-top: 55px;
   padding-left: 60px;
@@ -86,20 +95,30 @@ main {
   transform: translate(-100%, 50%); }
 
 .about__img-col {
-  margin-left: 140px; }
+  margin-left: auto; }
 
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end; }
 
+.projects::before {
+  position: absolute;
+  content: "";
+  bottom: -29px;
+  right: 2px;
+  width: 958px;
+  height: 2px;
+  background-color: #dfdfdf; }
+
 .projects__title {
-  margin-left: 28%; }
+  margin-left: 24%; }
 
 .projects__text {
-  width: 67%;
-  margin-left: 28%;
+  width: 59%;
+  margin-left: 24%;
   margin-bottom: 0; }
 
 .projects__wrapper {
@@ -110,40 +129,66 @@ main {
 .projects__block-text {
   position: absolute;
   top: 49px;
-  right: -142px;
-  width: 550px;
+  right: -292px;
+  width: 50%;
   padding-top: 63px;
   padding-bottom: 43px;
-  padding-left: 63px;
-  padding-right: 81px;
+  padding-left: 51px;
+  padding-right: 60px;
   background-color: #ffffff; }
+
+.projects__block-text::before {
+  position: absolute;
+  content: "";
+  bottom: -53px;
+  right: 60px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/arrows.png");
+  background-repeat: no-repeat;
+  cursor: pointer; }
 
 .projects__block-text h3 {
   font-size: 18px;
   line-height: 26px; }
 
 .projects__slogan {
-  margin-left: 28%;
+  width: 61%;
+  margin-left: 24%;
+  margin-top: 57px;
   padding-right: 5%; }
 
 .page-main__projects {
   margin-top: 104px; }
 
 .page-main__inteco-now {
-  margin-top: 64px; }
+  margin-top: 80px; }
 
 .page-main__basic-cause {
-  margin-top: 104px; }
+  margin-top: 95px;
+  padding-left: 60px; }
 
 .page-main__perks {
   margin-top: 104px; }
+
+.inteco-now {
+  position: relative; }
+
+.inteco-now::before {
+  position: absolute;
+  content: "";
+  bottom: -55px;
+  right: 0;
+  width: 917px;
+  height: 2px;
+  background-color: #dfdfdf; }
 
 .inteco-now__wrapper {
   display: flex;
   padding-left: 60px; }
 
 .inteco-now__text {
-  width: 50%;
+  width: 38%;
   margin-right: 83px; }
 
 .inteco-now__desc {
@@ -152,6 +197,9 @@ main {
 
 .inteco-now__desc dd {
   margin-left: 0; }
+
+.inteco-now__desc-block1 {
+  margin-right: 72px; }
 
 .inteco-now__desc-block1 span {
   display: block;
@@ -176,17 +224,37 @@ main {
   display: flex;
   margin-top: 57px; }
 
+.inteco-now__box::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 2px;
+  background-color: #dfdfdf; }
+
+.inteco-now__box::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 297px;
+  z-index: 1;
+  width: 2px;
+  height: 625px;
+  background-color: #dfdfdf; }
+
 .inteco-now__list {
   position: absolute;
-  top: 13%;
+  top: 7%;
   left: 1px;
-  max-width: 470px;
+  z-index: 2;
+  width: 37%;
   margin: 0;
   padding: 0;
-  padding-top: 60px;
+  padding-top: 68px;
   padding-bottom: 28px;
-  padding-left: 95px;
-  padding-right: 44px;
+  padding-left: 60px;
+  padding-right: 40px;
   list-style: none;
   background-color: #ffffff; }
 
@@ -211,8 +279,19 @@ main {
   margin-left: 30%; }
 
 .basic-cause__text-block {
-  margin-top: 67px;
+  position: relative;
+  margin-top: 50px;
   background-color: #ffffff; }
+
+.basic-cause__link::before {
+  position: absolute;
+  content: "";
+  top: 66px;
+  right: 47px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/arrows.png");
+  background-repeat: no-repeat; }
 
 .text-block {
   min-width: 1003px;
@@ -222,13 +301,53 @@ main {
   padding-bottom: 64px; }
 
 .text-block__title {
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 26px; }
 
 .text-block__lines {
+  display: flex;
   width: 100%;
   height: 4px;
-  margin-top: 16px;
+  margin-top: 16px; }
+
+.text-block__line-1 {
+  width: 8px;
+  background-color: #4764b0; }
+
+.text-block__line-2 {
+  width: 19px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-3 {
+  width: 30px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-4 {
+  width: 33px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-5 {
+  width: 58px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-6 {
+  width: 90px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-7 {
+  width: 270px;
+  margin-left: 10px;
+  background-color: #4764b0; }
+
+.text-block__line-8 {
+  width: 510px;
+  margin-left: 10px;
   background-color: #4764b0; }
 
 .text-block__subheader {
@@ -237,6 +356,7 @@ main {
   align-items: center; }
 
 .text-block__text {
+  width: 102%;
   margin-top: 44px; }
 
 .perks {
@@ -248,12 +368,19 @@ main {
   content: "";
   top: -36px;
   left: 0;
-  width: 300px;
+  width: 236px;
   height: 2px;
   background-color: #dfdfdf; }
 
 .perks::after {
-  position: absolute; }
+  position: absolute;
+  content: "";
+  top: -35px;
+  left: 234px;
+  z-index: 1;
+  width: 2px;
+  height: 1065px;
+  background-color: #dfdfdf; }
 
 .perks__title {
   text-align: center; }
@@ -263,15 +390,19 @@ main {
   display: flex;
   margin-top: 72px; }
 
+.perks__img-col {
+  z-index: 2; }
+
 .perks__list-col {
   position: absolute;
   top: -41px;
   right: -33px;
+  z-index: 3;
   width: 470px;
   padding-top: 50px;
   padding-bottom: 53px;
-  padding-left: 50px;
-  padding-right: 59px;
+  padding-left: 75px;
+  padding-right: 54px;
   background-color: #ffffff; }
 
 .perks__list {
@@ -299,6 +430,10 @@ main {
 .perks__link {
   position: absolute;
   bottom: -160px;
-  left: 0; }
+  left: 60px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/arrows.png");
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
