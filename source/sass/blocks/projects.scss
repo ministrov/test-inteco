@@ -16,7 +16,7 @@
     background-color: $decor-grey;
 
     @media (max-width: $mobile-width) {
-        width: 254px;
+        width: 286px;
     }
 }
 
@@ -77,6 +77,7 @@
     background-color: $white;
 
     @media (max-width: $mobile-width) {
+        top: 139px;
         right: -20px;
         width: 100%;
         padding-top: 28px;
@@ -127,8 +128,8 @@
     padding-right: 5%;
 
     @media (max-width: $mobile-width) {
-        width: 69%;
-        margin-top: 190px;
+        width: 89%;
+        margin-top: 292px;
         margin-left: 10%;
         font-size: 12px;
         line-height: 18px;
