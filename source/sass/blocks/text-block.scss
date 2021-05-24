@@ -1,15 +1,30 @@
 .text-block {
-    min-width: 1003px;
+    width: 1154px;
     padding-top: 54px;
     padding-left: 49px;
     padding-right: 48px;
     padding-bottom: 64px;
+
+    @media (max-width: $mobile-width) {
+        width: 270px;
+        padding-top: 37px;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-bottom: 50px;
+    }
 }
 
 .text-block__title {
     margin-bottom: 0;
     font-size: 18px;
     line-height: 26px;
+
+    @media (max-width: $mobile-width) {
+        width: 212px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
 }
 
 .text-block__lines {
@@ -52,18 +67,30 @@
     width: 90px;
     margin-left: 10px;
     background-color: $dark-blue;
+
+    @media (max-width: $mobile-width) {
+        width: 47px;
+    }
 }
 
 .text-block__line-7 {
     width: 270px;
     margin-left: 10px;
     background-color: $dark-blue;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .text-block__line-8 {
     width: 510px;
     margin-left: 10px;
     background-color: $dark-blue;
+
+    @media (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .text-block__subheader {
@@ -75,4 +102,11 @@
 .text-block__text {
     width: 102%;
     margin-top: 44px;
+
+    @media (max-width: $mobile-width) {
+        width: 240px;
+        margin-top: 24px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }

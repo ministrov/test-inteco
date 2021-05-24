@@ -1,5 +1,15 @@
+.page-main {
+    @media (max-width: $mobile-width) {
+        max-width: 300px;
+    }
+}
+
 .page-main__projects {
     margin-top: 104px;
+
+    @media (max-width: $mobile-width) {
+        margin-top: 410px;
+    }
 }
 
 .page-main__inteco-now {
@@ -9,8 +19,16 @@
 .page-main__basic-cause {
     margin-top: 95px;
     padding-left: 60px;
+
+    @media (max-width: $mobile-width) {
+        padding-left: 30px;
+    }
 }
 
 .page-main__perks {
     margin-top: 104px;
+
+    @media (max-width: $mobile-width) {
+        margin-top: 80px;
+    }
 }

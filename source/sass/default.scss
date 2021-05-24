@@ -1,5 +1,5 @@
 body {
-    min-width: 1250px;
+    min-width: 300px;
     margin: 0;
     padding: 0;
     padding-left: 10%;
@@ -9,6 +9,11 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: $basic-text;
+
+    @media (max-width: $mobile-width) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 *,
